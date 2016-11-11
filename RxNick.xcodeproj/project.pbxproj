@@ -13,6 +13,13 @@
 		01DA80721DCC384400E13DB8 /* RxNick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80701DCC384400E13DB8 /* RxNick.xcdatamodeld */; };
 		01DA80741DCC384400E13DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DA80731DCC384400E13DB8 /* Assets.xcassets */; };
 		01DA80771DCC384400E13DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA80751DCC384400E13DB8 /* LaunchScreen.storyboard */; };
+		01DA80C01DD3DD1800E13DB8 /* MockSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80BF1DD3DD1800E13DB8 /* MockSocketService.swift */; };
+		01DA80C21DD4DDAD00E13DB8 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C11DD4DDAD00E13DB8 /* ExampleViewController.swift */; };
+		01DA80C41DD4DE1C00E13DB8 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C31DD4DE1C00E13DB8 /* ExampleView.swift */; };
+		01DA80C61DD4DE4C00E13DB8 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C51DD4DE4C00E13DB8 /* ExampleModel.swift */; };
+		01DA80C81DD4DFF400E13DB8 /* ExampleBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C71DD4DFF400E13DB8 /* ExampleBinding.swift */; };
+		01DA80CA1DD4E19400E13DB8 /* Thermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C91DD4E19300E13DB8 /* Thermostat.swift */; };
+		D001629B57FDFBCEE0953EB8 /* Pods_RxNick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC9F9FDF88F22503B4B3165 /* Pods_RxNick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,15 @@
 		01DA80731DCC384400E13DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01DA80761DCC384400E13DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01DA80781DCC384400E13DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DA80BF1DD3DD1800E13DB8 /* MockSocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSocketService.swift; sourceTree = "<group>"; };
+		01DA80C11DD4DDAD00E13DB8 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		01DA80C31DD4DE1C00E13DB8 /* ExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		01DA80C51DD4DE4C00E13DB8 /* ExampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		01DA80C71DD4DFF400E13DB8 /* ExampleBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBinding.swift; sourceTree = "<group>"; };
+		01DA80C91DD4E19300E13DB8 /* Thermostat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thermostat.swift; sourceTree = "<group>"; };
+		0FC9F9FDF88F22503B4B3165 /* Pods_RxNick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E7EAC4AED2186527FA2189A /* Pods-RxNick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNick/Pods-RxNick.debug.xcconfig"; sourceTree = "<group>"; };
+		A3180F3A0DE6768F41907C1B /* Pods-RxNick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNick.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNick/Pods-RxNick.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D001629B57FDFBCEE0953EB8 /* Pods_RxNick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				01DA80681DCC384400E13DB8 /* RxNick */,
 				01DA80671DCC384400E13DB8 /* Products */,
+				A74862D2C4A02D5567AE19CC /* Pods */,
+				718BDEA94B1D1F5E4051CA28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +82,31 @@
 				01DA80751DCC384400E13DB8 /* LaunchScreen.storyboard */,
 				01DA80781DCC384400E13DB8 /* Info.plist */,
 				01DA80701DCC384400E13DB8 /* RxNick.xcdatamodeld */,
+				01DA80BF1DD3DD1800E13DB8 /* MockSocketService.swift */,
+				01DA80C11DD4DDAD00E13DB8 /* ExampleViewController.swift */,
+				01DA80C31DD4DE1C00E13DB8 /* ExampleView.swift */,
+				01DA80C51DD4DE4C00E13DB8 /* ExampleModel.swift */,
+				01DA80C71DD4DFF400E13DB8 /* ExampleBinding.swift */,
+				01DA80C91DD4E19300E13DB8 /* Thermostat.swift */,
 			);
 			path = RxNick;
+			sourceTree = "<group>";
+		};
+		718BDEA94B1D1F5E4051CA28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FC9F9FDF88F22503B4B3165 /* Pods_RxNick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A74862D2C4A02D5567AE19CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E7EAC4AED2186527FA2189A /* Pods-RxNick.debug.xcconfig */,
+				A3180F3A0DE6768F41907C1B /* Pods-RxNick.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01DA807B1DCC384400E13DB8 /* Build configuration list for PBXNativeTarget "RxNick" */;
 			buildPhases = (
+				C731DF3680377258A2DF5F69 /* [CP] Check Pods Manifest.lock */,
 				01DA80621DCC384400E13DB8 /* Sources */,
 				01DA80631DCC384400E13DB8 /* Frameworks */,
 				01DA80641DCC384400E13DB8 /* Resources */,
+				96F56494A255290F26C53BD9 /* [CP] Embed Pods Frameworks */,
+				B59F7452D4ECD0133FE26146 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,14 +180,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		96F56494A255290F26C53BD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxNick/Pods-RxNick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59F7452D4ECD0133FE26146 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxNick/Pods-RxNick-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C731DF3680377258A2DF5F69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		01DA80621DCC384400E13DB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				01DA806C1DCC384400E13DB8 /* ViewController.swift in Sources */,
+				01DA80C01DD3DD1800E13DB8 /* MockSocketService.swift in Sources */,
 				01DA80721DCC384400E13DB8 /* RxNick.xcdatamodeld in Sources */,
 				01DA806A1DCC384400E13DB8 /* AppDelegate.swift in Sources */,
+				01DA80C61DD4DE4C00E13DB8 /* ExampleModel.swift in Sources */,
+				01DA80C21DD4DDAD00E13DB8 /* ExampleViewController.swift in Sources */,
+				01DA80C81DD4DFF400E13DB8 /* ExampleBinding.swift in Sources */,
+				01DA80CA1DD4E19400E13DB8 /* Thermostat.swift in Sources */,
+				01DA80C41DD4DE1C00E13DB8 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +362,7 @@
 		};
 		01DA807C1DCC384400E13DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7EAC4AED2186527FA2189A /* Pods-RxNick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3D338NTUNJ;
@@ -276,6 +376,7 @@
 		};
 		01DA807D1DCC384400E13DB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3180F3A0DE6768F41907C1B /* Pods-RxNick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3D338NTUNJ;
@@ -306,6 +407,7 @@
 				01DA807D1DCC384400E13DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
