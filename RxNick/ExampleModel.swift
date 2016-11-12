@@ -18,11 +18,15 @@ class ExampleModel {
     private let exampleViewModel: Variable<ExampleViewModel>
     private let thermostat = Variable<Thermostat>(Thermostat.initial()) //TODO: How do we not default anything?
     
-    init() {
-        let service = MockSocketService.instance
+    init(thermostatDataService: TheremostatDataService) {
         self.exampleViewModel = Variable<ExampleViewModel>(ExampleViewModel.initial())
         self.exampleViewModelObservable = self.exampleViewModel.asObservable()
-        service.thermostatObservable
+        self.bindToThermostatObservable(thermostatDataService: thermostatDataService)
+        
+    }
+    
+    func bindToThermostatObservable(thermostatDataService: TheremostatDataService) {
+        thermostatDataService.thermostatObservable
             .map {thermostat in
                 return ExampleViewModel(currentTemp: thermostat.currentTemp, online: thermostat.connected)
             }
@@ -32,9 +36,7 @@ class ExampleModel {
                 }
             }
             .addDisposableTo(disposeBag)
-        
     }
-    
     
 }
 

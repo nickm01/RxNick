@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0110D2961DD68348007A9C0A /* ExampleModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0110D2861DD68255007A9C0A /* ExampleModelTests.swift */; };
+		0110D29D1DD6924D007A9C0A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0110D29C1DD6924D007A9C0A /* Info.plist */; };
+		0110D29F1DD692D5007A9C0A /* RxNickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0110D29E1DD692D5007A9C0A /* RxNickTests.swift */; };
 		01DA806A1DCC384400E13DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80691DCC384400E13DB8 /* AppDelegate.swift */; };
 		01DA806C1DCC384400E13DB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA806B1DCC384400E13DB8 /* ViewController.swift */; };
 		01DA806F1DCC384400E13DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DA806D1DCC384400E13DB8 /* Main.storyboard */; };
@@ -19,10 +22,25 @@
 		01DA80C61DD4DE4C00E13DB8 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C51DD4DE4C00E13DB8 /* ExampleModel.swift */; };
 		01DA80C81DD4DFF400E13DB8 /* ExampleBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C71DD4DFF400E13DB8 /* ExampleBinding.swift */; };
 		01DA80CA1DD4E19400E13DB8 /* Thermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA80C91DD4E19300E13DB8 /* Thermostat.swift */; };
+		2B0C810C701FB346B5A8D912 /* Pods_RxNickTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B61C00044826E9348EF1AB /* Pods_RxNickTests.framework */; };
 		D001629B57FDFBCEE0953EB8 /* Pods_RxNick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC9F9FDF88F22503B4B3165 /* Pods_RxNick.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0110D2911DD68315007A9C0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01DA805E1DCC384400E13DB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01DA80651DCC384400E13DB8;
+			remoteInfo = RxNick;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0110D2861DD68255007A9C0A /* ExampleModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModelTests.swift; sourceTree = "<group>"; };
+		0110D28C1DD68315007A9C0A /* RxNickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxNickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0110D29C1DD6924D007A9C0A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0110D29E1DD692D5007A9C0A /* RxNickTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxNickTests.swift; sourceTree = "<group>"; };
 		01DA80661DCC384400E13DB8 /* RxNick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DA80691DCC384400E13DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DA806B1DCC384400E13DB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,10 +57,21 @@
 		01DA80C91DD4E19300E13DB8 /* Thermostat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thermostat.swift; sourceTree = "<group>"; };
 		0FC9F9FDF88F22503B4B3165 /* Pods_RxNick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7EAC4AED2186527FA2189A /* Pods-RxNick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNick/Pods-RxNick.debug.xcconfig"; sourceTree = "<group>"; };
+		33192D37713F85AB3FEB31A7 /* Pods-RxNickTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNickTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNickTests/Pods-RxNickTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3180F3A0DE6768F41907C1B /* Pods-RxNick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNick.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNick/Pods-RxNick.release.xcconfig"; sourceTree = "<group>"; };
+		EEF167BBAB4612A56BFDFC85 /* Pods-RxNickTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNickTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNickTests/Pods-RxNickTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0B61C00044826E9348EF1AB /* Pods_RxNickTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNickTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0110D2891DD68315007A9C0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0C810C701FB346B5A8D912 /* Pods_RxNickTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01DA80631DCC384400E13DB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,9 +83,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0110D2991DD6921D007A9C0A /* RxNickTests */ = {
+			isa = PBXGroup;
+			children = (
+				0110D29E1DD692D5007A9C0A /* RxNickTests.swift */,
+				0110D29C1DD6924D007A9C0A /* Info.plist */,
+			);
+			path = RxNickTests;
+			sourceTree = "<group>";
+		};
 		01DA805D1DCC384400E13DB8 = {
 			isa = PBXGroup;
 			children = (
+				0110D2991DD6921D007A9C0A /* RxNickTests */,
 				01DA80681DCC384400E13DB8 /* RxNick */,
 				01DA80671DCC384400E13DB8 /* Products */,
 				A74862D2C4A02D5567AE19CC /* Pods */,
@@ -68,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				01DA80661DCC384400E13DB8 /* RxNick.app */,
+				0110D28C1DD68315007A9C0A /* RxNickTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +126,7 @@
 				01DA80C11DD4DDAD00E13DB8 /* ExampleViewController.swift */,
 				01DA80C31DD4DE1C00E13DB8 /* ExampleView.swift */,
 				01DA80C51DD4DE4C00E13DB8 /* ExampleModel.swift */,
+				0110D2861DD68255007A9C0A /* ExampleModelTests.swift */,
 				01DA80C71DD4DFF400E13DB8 /* ExampleBinding.swift */,
 				01DA80C91DD4E19300E13DB8 /* Thermostat.swift */,
 			);
@@ -96,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0FC9F9FDF88F22503B4B3165 /* Pods_RxNick.framework */,
+				F0B61C00044826E9348EF1AB /* Pods_RxNickTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,6 +147,8 @@
 			children = (
 				1E7EAC4AED2186527FA2189A /* Pods-RxNick.debug.xcconfig */,
 				A3180F3A0DE6768F41907C1B /* Pods-RxNick.release.xcconfig */,
+				33192D37713F85AB3FEB31A7 /* Pods-RxNickTests.debug.xcconfig */,
+				EEF167BBAB4612A56BFDFC85 /* Pods-RxNickTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -112,6 +156,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0110D28B1DD68315007A9C0A /* RxNickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0110D2931DD68316007A9C0A /* Build configuration list for PBXNativeTarget "RxNickTests" */;
+			buildPhases = (
+				20DF1980A97D90601413952F /* [CP] Check Pods Manifest.lock */,
+				0110D2881DD68315007A9C0A /* Sources */,
+				0110D2891DD68315007A9C0A /* Frameworks */,
+				0110D28A1DD68315007A9C0A /* Resources */,
+				C00E9E1E002A3B8406152DC3 /* [CP] Embed Pods Frameworks */,
+				E18B24CD6E06DDB9028E025C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0110D2921DD68315007A9C0A /* PBXTargetDependency */,
+			);
+			name = RxNickTests;
+			productName = RxNickTests;
+			productReference = 0110D28C1DD68315007A9C0A /* RxNickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		01DA80651DCC384400E13DB8 /* RxNick */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01DA807B1DCC384400E13DB8 /* Build configuration list for PBXNativeTarget "RxNick" */;
@@ -142,6 +207,12 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Nick McConnell";
 				TargetAttributes = {
+					0110D28B1DD68315007A9C0A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3D338NTUNJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 01DA80651DCC384400E13DB8;
+					};
 					01DA80651DCC384400E13DB8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3D338NTUNJ;
@@ -163,11 +234,20 @@
 			projectRoot = "";
 			targets = (
 				01DA80651DCC384400E13DB8 /* RxNick */,
+				0110D28B1DD68315007A9C0A /* RxNickTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0110D28A1DD68315007A9C0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0110D29D1DD6924D007A9C0A /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01DA80641DCC384400E13DB8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +261,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20DF1980A97D90601413952F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		96F56494A255290F26C53BD9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +306,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxNick/Pods-RxNick-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C00E9E1E002A3B8406152DC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxNickTests/Pods-RxNickTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C731DF3680377258A2DF5F69 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,9 +336,33 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		E18B24CD6E06DDB9028E025C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxNickTests/Pods-RxNickTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0110D2881DD68315007A9C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0110D29F1DD692D5007A9C0A /* RxNickTests.swift in Sources */,
+				0110D2961DD68348007A9C0A /* ExampleModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01DA80621DCC384400E13DB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +380,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0110D2921DD68315007A9C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01DA80651DCC384400E13DB8 /* RxNick */;
+			targetProxy = 0110D2911DD68315007A9C0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01DA806D1DCC384400E13DB8 /* Main.storyboard */ = {
@@ -267,6 +409,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0110D2941DD68316007A9C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33192D37713F85AB3FEB31A7 /* Pods-RxNickTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3D338NTUNJ;
+				INFOPLIST_FILE = RxNickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NM.RxNickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxNick.app/RxNick";
+			};
+			name = Debug;
+		};
+		0110D2951DD68316007A9C0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF167BBAB4612A56BFDFC85 /* Pods-RxNickTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3D338NTUNJ;
+				INFOPLIST_FILE = RxNickTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NM.RxNickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxNick.app/RxNick";
+			};
+			name = Release;
+		};
 		01DA80791DCC384400E13DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,6 +563,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0110D2931DD68316007A9C0A /* Build configuration list for PBXNativeTarget "RxNickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0110D2941DD68316007A9C0A /* Debug */,
+				0110D2951DD68316007A9C0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		01DA80611DCC384400E13DB8 /* Build configuration list for PBXProject "RxNick" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,12 +1,16 @@
 import Foundation
 import RxSwift
 
-class MockSocketService {
+protocol TheremostatDataService {
+    var thermostatObservable: Observable<Thermostat>! {get}
+}
+
+class DummySocketTheremostatDataService: TheremostatDataService {
     
-    let thermostatObservable: Observable<Thermostat>
+    var thermostatObservable: Observable<Thermostat>!
     private let thermostatVariable: Variable<Thermostat>
     
-    static let instance = MockSocketService()
+    static let instance = DummySocketTheremostatDataService()
     let disposeBag = DisposeBag()
     
     init() {
