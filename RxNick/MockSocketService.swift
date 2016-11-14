@@ -34,13 +34,6 @@ class DummySocketTheremostatDataService: TheremostatDataService {
             }
             .addDisposableTo(disposeBag)
         
-        
-//        let randomWait = Int(arc4random_uniform(5000))
-//        print(randomWait)
-//        let waittime: DispatchTime = .now() + .microseconds(randomWait)
-//        DispatchQueue.global(qos: .background).asyncAfter(deadline: waittime) {[weak self] _ in
-//            self?.processDataChange()
-//        }
     }
     
     func processDataChange() {

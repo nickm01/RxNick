@@ -10,6 +10,13 @@ struct ExampleViewModel {
     }
 }
 
+extension ExampleViewModel: Equatable {}
+
+func ==(lhs: ExampleViewModel, rhs: ExampleViewModel) -> Bool {
+    return lhs.currentTemp == rhs.currentTemp &&
+        lhs.online == rhs.online
+}
+
 class ExampleModel {
 
     let disposeBag = DisposeBag()

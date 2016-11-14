@@ -19,15 +19,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxTest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31F2FEC1C8703E91A59417E33C951B85</key>
+		<key>02149847F3CA773DCCACEBAA25674C70</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F9413A391431D5FDA5017D3D69D66449</key>
+		<key>03CDF977668A970C532761E5404222E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92D5D04E43B1F0FA29FBD0472E38AFF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
