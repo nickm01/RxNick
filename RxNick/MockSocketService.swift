@@ -47,6 +47,7 @@ class DummySocketTheremostatDataService: TheremostatDataService {
                         observer.onError(err)
                     } else {
                         self.thermostat = self.thermostat.makeRandomChanges()
+                        print("------------")
                         print("SocketService \(self.thermostat)")
                         observer.onNext(self.thermostat)
                     }

@@ -1,11 +1,17 @@
 import UIKit
 import RxSwift
+import RxSugar
 
 class ExampleView: UIView {
     
     let label1 = UILabel()
     let label2 = UILabel()
-
+    let label3 = UILabel()
+    let label4 = UILabel()
+    let variableLabel3 = Variable(ExampleViewModel.initial())
+    
+    let disposeBag = DisposeBag()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.initialize()
@@ -30,6 +36,29 @@ class ExampleView: UIView {
         label2.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         label2.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 20).isActive = true
         
+        self.addSubview(label3)
+        label3.translatesAutoresizingMaskIntoConstraints = false
+        label3.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        label3.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 50).isActive = true
+        
+        self.addSubview(label4)
+        label4.translatesAutoresizingMaskIntoConstraints = false
+        label4.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        label4.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 80).isActive = true
+        
+        
+        disposeBag ++ label3.rxs.text <~ variableLabel3.asObservable()
+            .map{
+                viewModel in
+                print("RxSugar Event \(viewModel)")
+                return ("Temp::\(viewModel.currentTemp)")
+            }
+        
+        variableLabel3.asObservable().subscribe {[weak self] event in
+            if let viewModel = event.element {
+                self?.label4.text = "4:\(viewModel.currentTemp)"
+            }
+        }.addDisposableTo(disposeBag)
     }
     
     func viewModelUpdates(event: Event<ExampleViewModel>) {

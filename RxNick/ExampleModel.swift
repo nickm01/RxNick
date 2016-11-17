@@ -27,7 +27,7 @@ class ExampleModel {
     
     init(thermostatDataService: TheremostatDataService) {
         self.exampleViewModel = Variable<ExampleViewModel>(ExampleViewModel.initial())
-        self.exampleViewModelObservable = self.exampleViewModel.asObservable()
+        self.exampleViewModelObservable = self.exampleViewModel.asObservable().observeOn(MainScheduler.instance)
         self.bindToThermostatObservable(thermostatDataService: thermostatDataService)
         
     }
@@ -38,7 +38,9 @@ class ExampleModel {
             .map {thermostat in
                 return ExampleViewModel(currentTemp: thermostat.currentTemp, online: thermostat.connected)
             }
-            .do(onNext: {_ in print("next")}, onError: nil, onCompleted: nil, onSubscribe: nil, onDispose: nil)
+            .do(onNext: {_ in
+                print("next")
+            }, onError: nil, onCompleted: nil, onSubscribe: nil, onDispose: nil)
             .subscribe {[weak self] viewModelEvent in
                 if let error = viewModelEvent.error {
                     print("**** ERROR RECEIVED **** \(error)")
