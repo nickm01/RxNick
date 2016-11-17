@@ -3,12 +3,13 @@ import UIKit
 
 class ExampleViewController: UIViewController {
 
-    let exampleModel = ExampleModel(thermostatDataService: DummySocketTheremostatDataService.instance)
+    var exampleModel: ExampleModel?
     
     override func loadView() {
+        self.exampleModel = ExampleModel(thermostatDataService: DummySocketTheremostatDataService.instance)
         super.loadView()
         let exampleView = ExampleView()
         self.view = exampleView
-        ExampleBinding.bindView(view: exampleView, model: self.exampleModel)
+        ExampleBinding.bindView(view: exampleView, model: self.exampleModel!)
     }
 }

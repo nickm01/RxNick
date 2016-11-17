@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,11 +47,48 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyP-3a-dua">
+                                <rect key="frame" x="166" y="109" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N8z-24-avH">
+                                <rect key="frame" x="26" y="300" width="323" height="308"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="50" id="zJF-cu-9A8">
+                                        <rect key="frame" x="0.0" y="28" width="323" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zJF-cu-9A8" id="JxG-dx-hMu">
+                                            <rect key="frame" x="0.0" y="0.0" width="323" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1k-eD-id9">
+                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DzB-x5-YwU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N8z-24-avH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Qpl-gl-f0K"/>
+                            <constraint firstItem="N8z-24-avH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="280" id="k3B-6b-u4O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="N8z-24-avH" secondAttribute="trailing" constant="10" id="rDv-cu-EFX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N8z-24-avH" secondAttribute="bottom" constant="10" id="xiY-JK-lkG"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Test" id="7m6-BX-3NY"/>
                     <connections>
+                        <outlet property="aLabel" destination="cyP-3a-dua" id="vrI-WL-f1D"/>
+                        <outlet property="aTable" destination="N8z-24-avH" id="zRI-de-bAE"/>
                         <outlet property="aTextField" destination="xaC-d3-nac" id="Q8d-L8-7dU"/>
                     </connections>
                 </viewController>

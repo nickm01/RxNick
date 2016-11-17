@@ -34,11 +34,18 @@ class ExampleModel {
     
     func bindToThermostatObservable(thermostatDataService: TheremostatDataService) {
         thermostatDataService.thermostatObservable
+            .catchErrorJustReturn(Thermostat.initial())
             .map {thermostat in
                 return ExampleViewModel(currentTemp: thermostat.currentTemp, online: thermostat.connected)
             }
+            .do(onNext: {_ in print("next")}, onError: nil, onCompleted: nil, onSubscribe: nil, onDispose: nil)
             .subscribe {[weak self] viewModelEvent in
-                if let viewModel = viewModelEvent.element {
+                if let error = viewModelEvent.error {
+                    print("**** ERROR RECEIVED **** \(error)")
+                    print("**** REBINDING ****")
+                    //self?.bindToThermostatObservable(thermostatDataService: thermostatDataService)
+
+                } else if let viewModel = viewModelEvent.element {
                     self?.exampleViewModel.value = viewModel
                 }
             }

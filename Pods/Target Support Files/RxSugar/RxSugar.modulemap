@@ -1,0 +1,6 @@
+framework module RxSugar {
+  umbrella header "RxSugar-umbrella.h"
+
+  export *
+  module * { export * }
+}

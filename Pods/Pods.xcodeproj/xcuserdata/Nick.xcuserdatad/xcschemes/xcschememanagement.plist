@@ -14,12 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxSwift.xcscheme</key>
+		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RxTest.xcscheme</key>
+		<key>RxSugar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02149847F3CA773DCCACEBAA25674C70</key>
+		<key>27394FC21DDF90FEAC1B54048F46AC7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>03CDF977668A970C532761E5404222E8</key>
+		<key>3632126674E7B29AA132F66E4244E3C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>92D5D04E43B1F0FA29FBD0472E38AFF0</key>
+		<key>BB788E3095472D9C9B6F63A5A21CCCFB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>FBDCE154794DC9DA178199F4C8DE6079</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD5AFEFCCF13F948915D217099D24EFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

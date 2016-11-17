@@ -2,29 +2,46 @@
 //  ViewController.swift
 //  RxNick
 //
-//  Created by Nick McConnell on 11/3/16.
-//  Copyright © 2016 Nick McConnell. All rights reserved.
-//..
-
 import UIKit
 import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
     
     @IBOutlet var aTextField: UITextField!
-
+    
+    @IBOutlet var aLabel: UILabel!
+    
+    @IBOutlet var aTable: UITableView!
+    var textFieldValue = Variable("")
+    
+    var myArray: [String] = ["one","two","three"]
+    var stuff: Variable<[String]>!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         _ = DummySocketTheremostatDataService.instance
         self.runExample()
+        aTextField.rx.text
+            .asObservable()
+            .throttle(3, scheduler: MainScheduler.instance)
+            .subscribe(aLabel.rx.text.asObserver())
+            .addDisposableTo(disposeBag)
+        
+        //let observable2 = Observable.just(["1","2","3"])
+        
+        self.stuff = Variable(myArray)
+        
+        stuff.asObservable().bindTo(aTable.rx.items(cellIdentifier: "cell")) {(row, element, cell) in
+                cell.textLabel?.text = "\(element) @ row \(row)"
+            }.addDisposableTo(disposeBag)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
+    @IBAction func didTap(_ sender: Any) {
+        self.myArray.append("bang")
+        self.stuff.value = self.myArray
+    }
 
     let disposeBag = DisposeBag()
     
