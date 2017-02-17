@@ -9,7 +9,7 @@ struct ExampleViewModel {
         return ExampleViewModel(currentTemp: 0, online: false)
     }
 }
-
+ 
 extension ExampleViewModel: Equatable {}
 
 func ==(lhs: ExampleViewModel, rhs: ExampleViewModel) -> Bool {
